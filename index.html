@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="form-container">
+        <form method="post">
+          <h1>Contact Us</h1>
+          <section class="personal-details">
+            <div class="first-name">
+              <label for="name">First Name <span>*</span></label>
+
+              <input type="text" id="name-first" name="name" required />
+              <p id="first-name">This field is required</p>
+            </div>
+            <div class="last-name">
+              <label for="last-name">Last Name <span>*</span></label>
+              <input type="text" id="name-last" name="name" required />
+              <p id="last-name">This field is required</p>
+            </div>
+            <div class="email">
+              <label for="email">Email Address <span>*</span></label>
+              <input type="email" name="email" id="e-mail" required />
+              <p id="email">Please enter a valid email address</p>
+            </div>
+          </section>
+          <section class="radio-section">
+            <label for="query">Query Type <span>*</span></label>
+            <div tabindex="0" class="general">
+              <input
+                type="radio"
+                id="general"
+                name="fixed-input"
+                value="general"
+              />
+              <h4>General Enquiry</h4>
+            </div>
+            <div tabindex="0" class="support">
+              <input
+                type="radio"
+                id="support"
+                name="fixed-input"
+                value="support"
+              />
+              <h4>Support Request</h4>
+            </div>
+            <p id="enquiry">Please select a query type</p>
+          </section>
+          <section class="message">
+            <label for="message">Message <span>*</span></label>
+            <textarea name="message" id="message"></textarea>
+            <p id="message-field">This field is required</p>
+          </section>
+          <div class="checkbox" tabindex="0">
+            <input type="checkbox" name="agree" id="agree" />
+            <label for="agree"
+              >I consent to being contacted by the team <span>*</span></label
+            >
+            <p id="checkbox-message">
+              To submit this form, please consent to being contacted
+            </p>
+          </div>
+          <button class="button" type="button">Submit</button>
+        </form>
+        <div class="success-container">
+          <div class="message-sent">
+            <img src="./assets/images/icon-success-check.svg" alt="checkbox" />
+            <h4>Message Sent!</h4>
+          </div>
+          <p>Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">LaStellaa</a>.
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
