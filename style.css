@@ -164,6 +164,7 @@ h4 {
 
 .checkbox {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
   margin-block: 2rem;
 }

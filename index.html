@@ -30,18 +30,18 @@
           <h1>Contact Us</h1>
           <section class="personal-details">
             <div class="first-name">
-              <label for="name">First Name <span>*</span></label>
+              <label for="name-first">First Name <span>*</span></label>
 
               <input type="text" id="name-first" name="name" required />
               <p id="first-name">This field is required</p>
             </div>
             <div class="last-name">
-              <label for="last-name">Last Name <span>*</span></label>
+              <label for="name-last">Last Name <span>*</span></label>
               <input type="text" id="name-last" name="name" required />
               <p id="last-name">This field is required</p>
             </div>
             <div class="email">
-              <label for="email">Email Address <span>*</span></label>
+              <label for="e-mail">Email Address <span>*</span></label>
               <input type="email" name="email" id="e-mail" required />
               <p id="email">Please enter a valid email address</p>
             </div>
@@ -49,21 +49,23 @@
           <section class="radio-section">
             <label for="query">Query Type <span>*</span></label>
             <div tabindex="0" class="general">
-              <input
-                type="radio"
-                id="general"
-                name="fixed-input"
-                value="general"
-              />
+              <label for="general">
+                <input
+                  type="radio"
+                  id="general"
+                  name="fixed-input"
+                  value="general"
+              /></label>
               <h4>General Enquiry</h4>
             </div>
             <div tabindex="0" class="support">
-              <input
-                type="radio"
-                id="support"
-                name="fixed-input"
-                value="support"
-              />
+              <label for="support">
+                <input
+                  type="radio"
+                  id="support"
+                  name="fixed-input"
+                  value="support"
+              /></label>
               <h4>Support Request</h4>
             </div>
             <p id="enquiry">Please select a query type</p>
@@ -74,10 +76,10 @@
             <p id="message-field">This field is required</p>
           </section>
           <div class="checkbox" tabindex="0">
-            <input type="checkbox" name="agree" id="agree" />
             <label for="agree"
               >I consent to being contacted by the team <span>*</span></label
             >
+            <input type="checkbox" name="agree" id="agree" />
             <p id="checkbox-message">
               To submit this form, please consent to being contacted
             </p>
