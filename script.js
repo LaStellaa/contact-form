@@ -25,6 +25,20 @@ const submitButton = document.querySelector(".button");
 
 const validEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+// Reset all messages
+
+function resetAll() {
+  inputFirstName.value = "";
+  inputLastName.value = "";
+  inputEmail.value = "";
+  inputMessage.value = "";
+  checkbox.checked = false;
+  radioButtons.forEach((radio) => {
+    radio.checked = false;
+  });
+  successMessage.style.display = "none";
+}
+
 submitButton.addEventListener("click", () => {
   //   console.log("button clicked");
 
@@ -55,5 +69,10 @@ submitButton.addEventListener("click", () => {
 
   if (allValid) {
     successMessage.style.display = "flex";
+
+    setTimeout(() => {
+      successMessage.style.display = "none";
+      resetAll();
+    }, 2000);
   }
 });
